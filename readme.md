@@ -1,0 +1,1 @@
+sobre o projeto Aluga na Trip

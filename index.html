@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Agenda AlugaTrip</title>
+
+</head>
+<body>
+   
+    <header>
+        
+         <h1>Agenda Aluga na Trip</h1>
+         <!--fiz a estrutura ,ta bagunçado mas vou deixar bonitinho,agr focar no js-->
+          <img src="logo trip.jpeg"
+            alt="logo da alugaTrip"
+            id="logo"
+            />
+
+    </header>
+    <main>
+
+        <button>Eventos</button>
+        <button>Caiaques</button>
+        <button>bicicletas</button><br>
+
+        <!--barra lateral-->
+        <aside>
+            <p>contatos</p>
+            <p>calendario2026</p>
+        </aside>
+        
+    <input type="date" id="calendario">
+    <!--campos sobre  alugueis e eventos,precisa estilizar e banco de dados-->
+
+    <section class="formulario" >
+        <fieldset>
+            <form action="cadastro.js" method="post" autocomplete="off" >
+                <label for="cliente">Cliente: </label>
+                <input type="text"id="cliente" placeholder="Nome e Sobrenome " required> <br>
+                <label for="telefone">telefone</label>
+                <input type="tel"id="telefone" placeholder=" DD + telefone" required> <br>
+                <label for="comprovante">Comprovante </label>
+                <input type="file"id="comprovante"> <br>
+                <label for="DateEntrega">Data da Entrega: </label>
+                <input type="date"id="DateEntrega" required> <br>
+                <label for="DateDevolucao">Data da Devolução: </label>
+                <input type="date"id="DateDevolucao" required> <br>
+                <label for="Tipoaluguel">Tipo de Aluguel: </label>
+                <input type="text" id="Tipoaluguel">
+                <label for="description"></label> <br>
+                <textarea name="Descricao" id="description" placeholder="Observação"></textarea><br>
+                <input type="submit" value="Salvar">
+                <input type="reset" value="Limpar">
+             </form>
+        </fieldset>
+
+    </section>
+
+
+    </main>
+    <footer>
+
+
+    </footer>
+    
+  
+
+    
+
+
+</body>
+</html>
