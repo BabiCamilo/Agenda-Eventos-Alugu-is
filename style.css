@@ -1,0 +1,150 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Corpo */
+body {
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #0d6efd;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+#logo {
+    width: 60px;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+/* Botões principais */
+main > button {
+    margin: 10px 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background: #198754;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+main > button:hover {
+    background: #146c43;
+}
+
+/* Layout */
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Sidebar */
+aside {
+    width: 200px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+aside p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Formulário */
+.formulario {
+    flex: 1;
+}
+
+fieldset {
+    border: none;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Inputs */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Foco */
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #0d6efd;
+    background: #f0f8ff;
+}
+
+/* Input date estilizado */
+input[type="date"] {
+    background: #f9f9f9;
+    cursor: pointer;
+}
+
+/* Botões do formulário */
+input[type="submit"] {
+    background: #0d6efd;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #0b5ed7;
+}
+
+input[type="reset"] {
+    background: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="reset"]:hover {
+    background: #bb2d3b;
+}
+
+/* Textarea */
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    #logo {
+        position: static;
+        display: block;
+        margin: 10px auto;
+    }
+}
